@@ -30,161 +30,160 @@ namespace Calculator
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.txtResult = new System.Windows.Forms.TextBox();
-            this.grpInput = new System.Windows.Forms.GroupBox();
-            this.btnDivision = new System.Windows.Forms.Button();
-            this.btnMultiplication = new System.Windows.Forms.Button();
-            this.btnSubtraction = new System.Windows.Forms.Button();
-            this.btnAddition = new System.Windows.Forms.Button();
-            this.txtSecondNumber = new System.Windows.Forms.TextBox();
-            this.txtFirstNumber = new System.Windows.Forms.TextBox();
-            this.lblSecondNumber = new System.Windows.Forms.Label();
-            this.lblFirstNumber = new System.Windows.Forms.Label();
-            this.grpInput.SuspendLayout();
-            this.SuspendLayout();
+            txtResult = new System.Windows.Forms.TextBox();
+            grpInput = new System.Windows.Forms.GroupBox();
+            btnDivision = new System.Windows.Forms.Button();
+            btnMultiplication = new System.Windows.Forms.Button();
+            btnSubtraction = new System.Windows.Forms.Button();
+            btnAddition = new System.Windows.Forms.Button();
+            txtSecondNumber = new System.Windows.Forms.TextBox();
+            txtFirstNumber = new System.Windows.Forms.TextBox();
+            lblSecondNumber = new System.Windows.Forms.Label();
+            lblFirstNumber = new System.Windows.Forms.Label();
+            grpInput.SuspendLayout();
+            SuspendLayout();
             // 
             // txtResult
             // 
-            this.txtResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtResult.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtResult.Location = new System.Drawing.Point(0, 0);
-            this.txtResult.Margin = new System.Windows.Forms.Padding(5);
-            this.txtResult.Name = "txtResult";
-            this.txtResult.ReadOnly = true;
-            this.txtResult.Size = new System.Drawing.Size(578, 50);
-            this.txtResult.TabIndex = 0;
-            this.txtResult.Text = "0";
-            this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            txtResult.BackColor = System.Drawing.Color.FromArgb(192, 255, 255);
+            txtResult.Dock = System.Windows.Forms.DockStyle.Top;
+            txtResult.Location = new System.Drawing.Point(0, 0);
+            txtResult.Margin = new System.Windows.Forms.Padding(5);
+            txtResult.Name = "txtResult";
+            txtResult.ReadOnly = true;
+            txtResult.Size = new System.Drawing.Size(374, 36);
+            txtResult.TabIndex = 0;
+            txtResult.Text = "0";
+            txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // grpInput
             // 
-            this.grpInput.Controls.Add(this.btnDivision);
-            this.grpInput.Controls.Add(this.btnMultiplication);
-            this.grpInput.Controls.Add(this.btnSubtraction);
-            this.grpInput.Controls.Add(this.btnAddition);
-            this.grpInput.Controls.Add(this.txtSecondNumber);
-            this.grpInput.Controls.Add(this.txtFirstNumber);
-            this.grpInput.Controls.Add(this.lblSecondNumber);
-            this.grpInput.Controls.Add(this.lblFirstNumber);
-            this.grpInput.Location = new System.Drawing.Point(13, 59);
-            this.grpInput.Name = "grpInput";
-            this.grpInput.Size = new System.Drawing.Size(553, 673);
-            this.grpInput.TabIndex = 1;
-            this.grpInput.TabStop = false;
-            this.grpInput.Text = "Input";
+            grpInput.Controls.Add(btnDivision);
+            grpInput.Controls.Add(btnMultiplication);
+            grpInput.Controls.Add(btnSubtraction);
+            grpInput.Controls.Add(btnAddition);
+            grpInput.Controls.Add(txtSecondNumber);
+            grpInput.Controls.Add(txtFirstNumber);
+            grpInput.Controls.Add(lblSecondNumber);
+            grpInput.Controls.Add(lblFirstNumber);
+            grpInput.Location = new System.Drawing.Point(12, 58);
+            grpInput.Name = "grpInput";
+            grpInput.Size = new System.Drawing.Size(344, 443);
+            grpInput.TabIndex = 1;
+            grpInput.TabStop = false;
+            grpInput.Text = "Input";
             // 
             // btnDivision
             // 
-            this.btnDivision.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnDivision.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDivision.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnDivision.Location = new System.Drawing.Point(320, 454);
-            this.btnDivision.Name = "btnDivision";
-            this.btnDivision.Size = new System.Drawing.Size(199, 157);
-            this.btnDivision.TabIndex = 3;
-            this.btnDivision.Text = "/";
-            this.btnDivision.UseCompatibleTextRendering = true;
-            this.btnDivision.UseVisualStyleBackColor = false;
-            this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
+            btnDivision.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
+            btnDivision.Font = new System.Drawing.Font("Segoe UI", 42F);
+            btnDivision.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnDivision.Location = new System.Drawing.Point(197, 318);
+            btnDivision.Name = "btnDivision";
+            btnDivision.Size = new System.Drawing.Size(134, 105);
+            btnDivision.TabIndex = 3;
+            btnDivision.Text = "/";
+            btnDivision.UseCompatibleTextRendering = true;
+            btnDivision.UseVisualStyleBackColor = false;
+            btnDivision.Click += btnDivision_Click;
             // 
             // btnMultiplication
             // 
-            this.btnMultiplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnMultiplication.Font = new System.Drawing.Font("Segoe UI", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMultiplication.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMultiplication.Location = new System.Drawing.Point(32, 454);
-            this.btnMultiplication.Name = "btnMultiplication";
-            this.btnMultiplication.Size = new System.Drawing.Size(199, 157);
-            this.btnMultiplication.TabIndex = 3;
-            this.btnMultiplication.Text = "x";
-            this.btnMultiplication.UseCompatibleTextRendering = true;
-            this.btnMultiplication.UseVisualStyleBackColor = false;
-            this.btnMultiplication.Click += new System.EventHandler(this.btnMultiplication_Click);
+            btnMultiplication.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
+            btnMultiplication.Font = new System.Drawing.Font("Segoe UI", 50F);
+            btnMultiplication.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnMultiplication.Location = new System.Drawing.Point(21, 313);
+            btnMultiplication.Name = "btnMultiplication";
+            btnMultiplication.Size = new System.Drawing.Size(134, 105);
+            btnMultiplication.TabIndex = 3;
+            btnMultiplication.Text = "x";
+            btnMultiplication.UseCompatibleTextRendering = true;
+            btnMultiplication.UseVisualStyleBackColor = false;
+            btnMultiplication.Click += btnMultiplication_Click;
             // 
             // btnSubtraction
             // 
-            this.btnSubtraction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnSubtraction.Font = new System.Drawing.Font("Segoe UI", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSubtraction.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSubtraction.Location = new System.Drawing.Point(320, 244);
-            this.btnSubtraction.Name = "btnSubtraction";
-            this.btnSubtraction.Size = new System.Drawing.Size(199, 157);
-            this.btnSubtraction.TabIndex = 3;
-            this.btnSubtraction.Text = "-";
-            this.btnSubtraction.UseCompatibleTextRendering = true;
-            this.btnSubtraction.UseVisualStyleBackColor = false;
-            this.btnSubtraction.Click += new System.EventHandler(this.btnSubtraction_Click);
+            btnSubtraction.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
+            btnSubtraction.Font = new System.Drawing.Font("Segoe UI", 72F);
+            btnSubtraction.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnSubtraction.Location = new System.Drawing.Point(197, 188);
+            btnSubtraction.Name = "btnSubtraction";
+            btnSubtraction.Size = new System.Drawing.Size(134, 105);
+            btnSubtraction.TabIndex = 3;
+            btnSubtraction.Text = "-";
+            btnSubtraction.UseCompatibleTextRendering = true;
+            btnSubtraction.UseVisualStyleBackColor = false;
+            btnSubtraction.Click += btnSubtraction_Click;
             // 
             // btnAddition
             // 
-            this.btnAddition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnAddition.Font = new System.Drawing.Font("Segoe UI", 64F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddition.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAddition.Location = new System.Drawing.Point(32, 244);
-            this.btnAddition.Name = "btnAddition";
-            this.btnAddition.Size = new System.Drawing.Size(199, 157);
-            this.btnAddition.TabIndex = 3;
-            this.btnAddition.Text = "+";
-            this.btnAddition.UseCompatibleTextRendering = true;
-            this.btnAddition.UseVisualStyleBackColor = false;
-            this.btnAddition.Click += new System.EventHandler(this.btnAddition_Click);
+            btnAddition.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
+            btnAddition.Font = new System.Drawing.Font("Segoe UI", 64F);
+            btnAddition.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnAddition.Location = new System.Drawing.Point(21, 188);
+            btnAddition.Name = "btnAddition";
+            btnAddition.Size = new System.Drawing.Size(134, 105);
+            btnAddition.TabIndex = 3;
+            btnAddition.Text = "+";
+            btnAddition.UseCompatibleTextRendering = true;
+            btnAddition.UseVisualStyleBackColor = false;
+            btnAddition.Click += btnAddition_Click;
             // 
             // txtSecondNumber
             // 
-            this.txtSecondNumber.Location = new System.Drawing.Point(288, 130);
-            this.txtSecondNumber.Name = "txtSecondNumber";
-            this.txtSecondNumber.Size = new System.Drawing.Size(231, 50);
-            this.txtSecondNumber.TabIndex = 2;
-            this.txtSecondNumber.Text = "0";
-            this.txtSecondNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            txtSecondNumber.Location = new System.Drawing.Point(173, 113);
+            txtSecondNumber.Name = "txtSecondNumber";
+            txtSecondNumber.Size = new System.Drawing.Size(145, 36);
+            txtSecondNumber.TabIndex = 2;
+            txtSecondNumber.Text = "0";
+            txtSecondNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtFirstNumber
             // 
-            this.txtFirstNumber.Location = new System.Drawing.Point(288, 57);
-            this.txtFirstNumber.Name = "txtFirstNumber";
-            this.txtFirstNumber.Size = new System.Drawing.Size(231, 50);
-            this.txtFirstNumber.TabIndex = 2;
-            this.txtFirstNumber.Text = "0";
-            this.txtFirstNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            txtFirstNumber.Location = new System.Drawing.Point(173, 44);
+            txtFirstNumber.Name = "txtFirstNumber";
+            txtFirstNumber.Size = new System.Drawing.Size(145, 36);
+            txtFirstNumber.TabIndex = 2;
+            txtFirstNumber.Text = "0";
+            txtFirstNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblSecondNumber
             // 
-            this.lblSecondNumber.AutoSize = true;
-            this.lblSecondNumber.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSecondNumber.Location = new System.Drawing.Point(57, 142);
-            this.lblSecondNumber.Name = "lblSecondNumber";
-            this.lblSecondNumber.Size = new System.Drawing.Size(213, 38);
-            this.lblSecondNumber.TabIndex = 1;
-            this.lblSecondNumber.Text = "Second number";
+            lblSecondNumber.AutoSize = true;
+            lblSecondNumber.Font = new System.Drawing.Font("Segoe UI", 14F);
+            lblSecondNumber.Location = new System.Drawing.Point(21, 124);
+            lblSecondNumber.Name = "lblSecondNumber";
+            lblSecondNumber.Size = new System.Drawing.Size(145, 25);
+            lblSecondNumber.TabIndex = 1;
+            lblSecondNumber.Text = "Second number";
             // 
             // lblFirstNumber
             // 
-            this.lblFirstNumber.AutoSize = true;
-            this.lblFirstNumber.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFirstNumber.Location = new System.Drawing.Point(57, 69);
-            this.lblFirstNumber.Name = "lblFirstNumber";
-            this.lblFirstNumber.Size = new System.Drawing.Size(174, 38);
-            this.lblFirstNumber.TabIndex = 0;
-            this.lblFirstNumber.Text = "First number";
+            lblFirstNumber.AutoSize = true;
+            lblFirstNumber.Font = new System.Drawing.Font("Segoe UI", 14F);
+            lblFirstNumber.Location = new System.Drawing.Point(21, 51);
+            lblFirstNumber.Name = "lblFirstNumber";
+            lblFirstNumber.Size = new System.Drawing.Size(118, 25);
+            lblFirstNumber.TabIndex = 0;
+            lblFirstNumber.Text = "First number";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 744);
-            this.Controls.Add(this.grpInput);
-            this.Controls.Add(this.txtResult);
-            this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "MainForm";
-            this.Text = "Calculator";
-            this.grpInput.ResumeLayout(false);
-            this.grpInput.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(374, 513);
+            Controls.Add(grpInput);
+            Controls.Add(txtResult);
+            Font = new System.Drawing.Font("Segoe UI", 16F);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(5);
+            Name = "MainForm";
+            Text = "Calculator";
+            grpInput.ResumeLayout(false);
+            grpInput.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
